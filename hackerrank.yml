@@ -20,5 +20,5 @@ configuration:
       - src/app/app.component.html
     project_menu:
       run: npm start
-      install: chmod 700 ./env-setup.sh && ./env-setup.sh && exec "$SHELL" && nvm use 8 && npm install
+      install: chmod 700 ./env-setup.sh && ./env-setup.sh && exec "$SHELL" && nvm use 8 && sudo su && ./env-setup.sh && apt install python2 -y && npm install -g @angular/cli@1.6.6 && su user && nvm use 8 && npm install
       test: npm test
