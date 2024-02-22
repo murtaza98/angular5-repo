@@ -6,4 +6,3 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 nvm install v8
 nvm use v8
 echo "install complete"
-exit 0
